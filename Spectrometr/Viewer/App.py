@@ -230,7 +230,6 @@ class Interface():
         return 'Setup'
 
     def get_menu(self):
-
         rail = NavigationRail(
             selected_index=self.selected_index,
             label_type=NavigationRailLabelType.ALL,
