@@ -132,7 +132,7 @@ def send_menu(message):
     # Добавляем кнопки на клавиатуру
     markup.add(item1, item2)
 
-    # Отправляем сообщение с меню
+    # Отправляем сообщение с кнопками
     bot.send_message(message.chat.id, "Выберите опцию:", reply_markup=markup)
 
 @bot.callback_query_handler(func=lambda call: True)
